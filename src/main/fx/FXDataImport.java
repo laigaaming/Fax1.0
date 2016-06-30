@@ -20,8 +20,8 @@ public class FXDataImport {
 		String appKey = "18895";
 		String sign = "f3b4032d0b5db704d8cc4e261203cf9d";
 		String format = "json";
-		String[] scur = new String[] { "USD", "CNY", "AUD", "CAD", "EUR" };
-		String[] tcur = new String[] { "USD", "CNY", "AUD", "CAD", "EUR" };
+		String[] scur = new String[] { "USD", "CNY", "AUD", "CAD", "EUR", "GBP" };
+		String[] tcur = new String[] { "USD", "CNY", "AUD", "CAD", "EUR", "GBP" };
 		double rate;
 		
 
