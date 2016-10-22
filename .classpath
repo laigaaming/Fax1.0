@@ -4,14 +4,14 @@
 	<classpathentry kind="src" path="lib"/>
 	<classpathentry kind="src" path="other"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax/lib/commons-beanutils-1.7.0.jar"/>
-	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax/lib/commons-collections-3.1.jar"/>
-	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax/lib/commons-lang-2.5.jar"/>
-	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax/lib/commons-logging.jar"/>
-	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax/lib/ezmorph-1.0.3.jar"/>
-	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax/lib/json.jar"/>
-	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax/lib/json-lib-2.4-jdk15.jar"/>
-	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax/lib/jxl.jar"/>
-	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax/lib/mysql-connector-java-5.1.34-bin.jar"/>
+	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax1.0/lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax1.0/lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax1.0/lib/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax1.0/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax1.0/lib/ezmorph-1.0.3.jar"/>
+	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax1.0/lib/json.jar"/>
+	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax1.0/lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax1.0/lib/jxl.jar"/>
+	<classpathentry kind="lib" path="E:/JAVA/Fax/Fax1.0/lib/mysql-connector-java-5.1.34-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

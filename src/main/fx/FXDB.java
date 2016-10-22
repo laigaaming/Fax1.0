@@ -30,7 +30,7 @@ public class FXDB {
 		return result;
 	}
 	
-	public static void main(String agrs[]) {
-//		insertDB("fx", "USD", "CNY", 6.4737);
-	}
+	/*public static void main(String agrs[]) {
+		insertDB("fx", "USD", "CNY", 6.4737);
+	}*/
 }
