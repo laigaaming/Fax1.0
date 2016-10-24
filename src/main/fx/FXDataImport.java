@@ -17,24 +17,31 @@ public class FXDataImport {
 //		System.out.println("URL: "+url);
 		return url;
 	}
+	
+	public JSONObject getJsonObject(String url) {
+		HttpRequestUtil hru = new HttpRequestUtil();
+		Object fx = hru.HttpRequest(url);
+//		System.out.println(fx);
+		JSONObject fxDataObject=JSONObject.fromObject(fx);
+		JSONObject resultObject=fxDataObject.getJSONObject("result");
+		return resultObject;
+	}
 
 	public void getFXData() {
 		Config config=new Config();	
-		HttpRequestUtil hru = new HttpRequestUtil();
+		
 		String[] scur=config.scur;
 		String[] tcur=config.tcur;
-		double rate;
+		
 		for (int i = 0; i < scur.length; i++) {
 			for (int j = 0; j < tcur.length; j++) {
 				if (!scur[i].equals(tcur[j])) {
 					String url=getURL(scur[i], tcur[j]);
-					Object fx = hru.HttpRequest(url);
-//					System.out.println(fx);
-					JSONObject fxDataObject=JSONObject.fromObject(fx);
-					JSONObject resultObject=fxDataObject.getJSONObject("result");
+					
+					JSONObject resultObject=getJsonObject(url);
 //					System.out.println(resultObject);
 					
-					rate=resultObject.getDouble("rate");
+					double rate=resultObject.getDouble("rate");
 //					System.out.println(scur[i]+"/"+tcur[j]+" "+rate);
 					
 					FXDB fxdb=new FXDB();

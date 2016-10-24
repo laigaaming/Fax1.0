@@ -6,7 +6,7 @@ import datetime.Datetime;
 import util.DBUtil;
 
 public class FXDB {
-	public static int insertDB(String table, String scur, String tcur, double rate) {
+	public int insertDB(String table, String scur, String tcur, double rate) {
 		Connection conn = null;
 		Statement stmt = null;
 		int result = 0;
