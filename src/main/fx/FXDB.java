@@ -16,12 +16,10 @@ public class FXDB {
 		String sql = "insert into "+table+"(scur,tcur,rate,date) values('"+scur+"','"+tcur+"',"+rate+",'"+date+"')";
 		System.out.println(sql);
 		
-		
 		conn = DBUtil.getConnection();
 		try {
 			stmt = conn.createStatement();
 			result=stmt.executeUpdate(sql);
-//			System.out.println("regist result:"+result);
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();

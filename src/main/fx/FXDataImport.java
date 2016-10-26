@@ -29,7 +29,6 @@ public class FXDataImport {
 
 	public void getFXData() {
 		Config config=new Config();	
-		
 		String[] scur=config.scur;
 		String[] tcur=config.tcur;
 		
