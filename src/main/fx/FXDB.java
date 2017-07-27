@@ -7,7 +7,6 @@ import util.DBUtil;
 
 public class FXDB {
 	public int insertDB(String table, String scur, String tcur, double rate) {
-		Connection conn = null;
 		Statement stmt = null;
 		int result = 0;
 		Datetime datetime=new Datetime();
@@ -16,7 +15,7 @@ public class FXDB {
 		String sql = "insert into "+table+"(scur,tcur,rate,date) values('"+scur+"','"+tcur+"',"+rate+",'"+date+"')";
 		System.out.println(sql);
 		
-		conn = DBUtil.getConnection();
+		Connection conn = DBUtil.getConnection();
 		try {
 			stmt = conn.createStatement();
 			result=stmt.executeUpdate(sql);

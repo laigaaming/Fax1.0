@@ -12,7 +12,7 @@ public class FXDataImport {
 	
 	public String getURL(String scur, String tcur) {
 		Config config=new Config();
-		String url = "http://api.k780.com:88/?app=finance.rate&scur="+scur+"&tcur="+tcur+"&appkey="
+		String url = "http://api.k780.com/?app=finance.rate&scur="+scur+"&tcur="+tcur+"&appkey="
 				+ config.appKey + "&sign=" + config.sign + "&format=" + config.format;
 //		System.out.println("URL: "+url);
 		return url;
